@@ -7,6 +7,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 public class DevopstoolApplication extends SpringBootServletInitializer {
+	public static void main(String[] args) {
+		SpringApplication.run(DevopstoolApplication.class, args);
+	}
+	
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application){
+		return application.source(DevopstoolApplication.class);
+	}
+	private static class 
 	
 	@GetMapping("/AWS")
 	public String HelloAWS()
@@ -14,8 +23,6 @@ public class DevopstoolApplication extends SpringBootServletInitializer {
 		return "Hello AWS Application";
 	}
 
-	public static void main(String[] args) {
-		SpringApplication.run(DevopstoolApplication.class, args);
-	}
+	
 
 }
