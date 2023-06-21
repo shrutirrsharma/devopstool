@@ -15,7 +15,7 @@ public class DevopstoolApplication extends SpringBootServletInitializer {
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application){
 		return application.source(DevopstoolApplication.class);
 	}
-	private static  Class DevopstoolApplication applicationclass = DevopstoolApplication.class;
+	private static  Class DevopstoolApplication application.class = DevopstoolApplication.class;
 }
 	
 	@GetMapping("/AWS")
