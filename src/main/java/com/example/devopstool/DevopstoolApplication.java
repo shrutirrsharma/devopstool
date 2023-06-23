@@ -14,6 +14,14 @@ public class DevopstoolApplication extends SpringBootServletInitializer {
 		return "Hello AWS Application";
 	}
 
+
+	@GetMapping("/Vinit")
+	public String HelloVinit()
+	{
+		
+		return "Hello From Vinit";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(DevopstoolApplication.class, args);
 	}
