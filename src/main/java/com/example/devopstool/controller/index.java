@@ -25,6 +25,6 @@ public class index {
 	@GetMapping("/Vinit")
 	public String HelloVinit()
 	{
-		return "This thing ruuns  my Boi "
+		return "This thing ruuns  my Boi ";
 	}
 }
