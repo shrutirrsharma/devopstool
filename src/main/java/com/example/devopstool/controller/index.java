@@ -22,7 +22,7 @@ public class index {
 		return "Hello AWS Application";
 	}
 
-	@GetMapping("/Vinit)
+	@GetMapping("/Vinit")
 	public String HelloVinit()
 	{
 		return "This thing ruuns  my Boi "
