@@ -5,14 +5,13 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY webapp.war /app/webapp.war
+COPY devopstool.war /app/devopstool.war
 
 # Make port 8080 available to the world outside this container
-EXPOSE 8083
+EXPOSE 8082
 
 # Define environment variable
 ENV JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom"
 
 # Run your application when the container launches
-CMD ["java", "-jar", "/app/webapp.war"]
-
+CMD ["java", "-jar", "/app/devopstool.war"]
